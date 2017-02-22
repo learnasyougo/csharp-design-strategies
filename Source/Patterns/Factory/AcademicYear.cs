@@ -9,11 +9,14 @@ namespace Factory
         public string ShortNotation
             => $"{Start}-{End.ToString().Substring(2, 2)}";
 
+        // Use factory pattern for all methods,
+        // don't leave a public constructor out there
+        // this way it's consistent to the outside world.
         private AcademicYear(int start, int end) {
             Start = start;
             End = end;
         }
-
+        
         public static AcademicYear FromStartAndEnd(int start, int end) {
             return new AcademicYear(start, end);
         }
