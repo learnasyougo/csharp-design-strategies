@@ -64,6 +64,19 @@
     <Compile Include="01_Example_Ducks\02_Strategy\QuackBehaviours\RelayQuackBehaviour.cs" />
     <Compile Include="01_Example_Ducks\02_Strategy\RubberDuck.cs" />
     <Compile Include="01_Example_Ducks\02_Strategy\WildDuck.cs" />
+    <Compile Include="01_Example_Ducks\03_Strategy_Refactored\DisplayBehaviours\DefaultDisplayBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\03_Strategy_Refactored\DisplayBehaviours\RelayDisplayBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\03_Strategy_Refactored\Duck.cs" />
+    <Compile Include="01_Example_Ducks\03_Strategy_Refactored\FlyBehaviours\DefaultFlyBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\03_Strategy_Refactored\FlyBehaviours\GlidingFlyBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\03_Strategy_Refactored\FlyBehaviours\NoFlyBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\03_Strategy_Refactored\FlyBehaviours\RelayFlyBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\03_Strategy_Refactored\IDisplayBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\03_Strategy_Refactored\IFlyBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\03_Strategy_Refactored\IQuackBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\03_Strategy_Refactored\QuackBehaviours\DefaultQuackBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\03_Strategy_Refactored\QuackBehaviours\PlasticQuackBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\03_Strategy_Refactored\QuackBehaviours\RelayQuackBehaviour.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
