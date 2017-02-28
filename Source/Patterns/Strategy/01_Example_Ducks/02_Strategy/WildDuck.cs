@@ -2,8 +2,5 @@
 {
     public class WildDuck : Duck
     {
-        public override string Display() {
-            return nameof(WildDuck);
-        }
     }
 }

@@ -11,9 +11,5 @@ namespace Strategy._01_Example_Ducks._02_Strategy
                 flyBehaviour: new NoFlyBehaviour()
             ) {
         }
-
-        public override string Display() {
-            return nameof(RubberDuck);
-        }
     }
 }
