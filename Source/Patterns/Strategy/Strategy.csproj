@@ -48,10 +48,13 @@
     <Compile Include="01_Example_Ducks\01_Inheritance\WildDuck.cs" />
     <Compile Include="01_Example_Ducks\02_Strategy\CityDuck.cs" />
     <Compile Include="01_Example_Ducks\02_Strategy\CloudDuck.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\DisplayBehaviours\DefaultDisplayBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\DisplayBehaviours\RelayDisplayBehaviour.cs" />
     <Compile Include="01_Example_Ducks\02_Strategy\Duck.cs" />
     <Compile Include="01_Example_Ducks\02_Strategy\FlyBehaviours\DefaultFlyBehaviour.cs" />
     <Compile Include="01_Example_Ducks\02_Strategy\FlyBehaviours\GlidingFlyBehaviour.cs" />
     <Compile Include="01_Example_Ducks\02_Strategy\FlyBehaviours\NoFlyBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\IDisplayBehaviour.cs" />
     <Compile Include="01_Example_Ducks\02_Strategy\MountainDuck.cs" />
     <Compile Include="01_Example_Ducks\02_Strategy\QuackBehaviours\PlasticQuackBehaviour.cs" />
     <Compile Include="01_Example_Ducks\02_Strategy\FlyBehaviours\RelayFlyBehaviour.cs" />
