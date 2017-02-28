@@ -10,7 +10,7 @@ Important to note that this pattern **is not suited** when you care about the **
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Decorator_UML_class_diagram.svg/600px-Decorator_UML_class_diagram.svg.png"/>
 
 ## Examples
-**Todo**
+The coffe example is just an illustration how to implement the decorator pattern. **But in fact it is not a candidate for the decorator pattern**. Still looking for a better example.
 
 
 ## References
