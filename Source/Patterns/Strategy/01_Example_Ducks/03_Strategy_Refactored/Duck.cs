@@ -4,11 +4,12 @@ using Strategy._01_Example_Ducks._03_Strategy_Refactored.QuackBehaviours;
 
 namespace Strategy._01_Example_Ducks._03_Strategy_Refactored
 {
-    public class Duck
+    // sealed the class
+    public sealed class Duck
     {
-        IDisplayBehaviour _displayBehaviour;
-        IQuackBehaviour _quackBehaviour;
-        IFlyBehaviour _flyBehaviour;
+        private readonly IDisplayBehaviour _displayBehaviour;
+        private readonly IQuackBehaviour _quackBehaviour;
+        private readonly IFlyBehaviour _flyBehaviour;
 
         // How to inject the behaviour, in stead of having them hardcoded as in "02_Strategy"
         // Use constructor injection and get default behaviours if you want
@@ -23,14 +24,18 @@ namespace Strategy._01_Example_Ducks._03_Strategy_Refactored
             _flyBehaviour = flyBehaviour ?? new DefaultFlyBehaviour();
         }
 
-        public virtual string Quack() {
+        // Removed "virtual"
+        public string Quack() {
             return _quackBehaviour.Quack();
         }
-        public virtual string Display() {
+
+        // Removed "virtual"
+        public string Display() {
             return _displayBehaviour.Display(this.GetType());
         }
 
-        public virtual string Fly() {
+        // Removed "virtual"
+        public string Fly() {
             return _flyBehaviour.Fly();
         }
     }
