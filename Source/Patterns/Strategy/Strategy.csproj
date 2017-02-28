@@ -40,11 +40,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="01_Example_Ducks\01_Inheritance\CityDuck.cs" />
+    <Compile Include="01_Example_Ducks\01_Inheritance\CloudDuck.cs" />
+    <Compile Include="01_Example_Ducks\01_Inheritance\Duck.cs" />
+    <Compile Include="01_Example_Ducks\01_Inheritance\MountainDuck.cs" />
+    <Compile Include="01_Example_Ducks\01_Inheritance\RubberDuck.cs" />
+    <Compile Include="01_Example_Ducks\01_Inheritance\WildDuck.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\CityDuck.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\CloudDuck.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\Duck.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\FlyBehaviours\DefaultFlyBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\FlyBehaviours\GlidingFlyBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\FlyBehaviours\NoFlyBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\MountainDuck.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\QuackBehaviours\PlasticQuackBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\FlyBehaviours\RelayFlyBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\IFlyBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\IQuackBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\QuackBehaviours\DefaultQuackBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\QuackBehaviours\RelayQuackBehaviour.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\RubberDuck.cs" />
+    <Compile Include="01_Example_Ducks\02_Strategy\WildDuck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
