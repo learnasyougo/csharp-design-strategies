@@ -10,7 +10,7 @@ namespace Strategy._01_Example_Ducks._03_Strategy_Refactored.DisplayBehaviours
             _displayBehaviour = displayBehaviour;
         }
 
-        public string Display<T>() where T : Duck {
+        public string Display<T>() {
             return _displayBehaviour(typeof(T));
         }
 
