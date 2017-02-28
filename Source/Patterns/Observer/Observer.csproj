@@ -40,6 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="01_Example_Temperature\01_Polling\LogTemperature.cs" />
+    <Compile Include="01_Example_Temperature\01_Polling\Thermometer.cs" />
+    <Compile Include="01_Example_Temperature\02_Observer\IObservable.cs" />
+    <Compile Include="01_Example_Temperature\02_Observer\IObserver.cs" />
+    <Compile Include="01_Example_Temperature\02_Observer\LogThermometerObserver.cs" />
+    <Compile Include="01_Example_Temperature\02_Observer\Thermometer.cs" />
+    <Compile Include="01_Example_Temperature\02_Observer\UiElementThermometerObserver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
