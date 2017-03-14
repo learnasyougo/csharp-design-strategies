@@ -20,13 +20,13 @@
 - Data binding (e.g. data binding infrastructure WPF & Silverlight) - but maybe in the future also Angular(JS). No more code behind spaghetti code ;-).
 
 ### Components
-- MODEL: has **no** reference to the View or the ViewModel.
+- MODEL: has **no** reference to the View or the ViewModel. It doesn't know of the existance of either the View or the ViewModel.
 - VIEW: 
-  - May or may not have a reference to the ViewModel.
+  - May or may not have a reference (no hard coded reference - but there will be an instance in it's data context) to the ViewModel. It depends on how you implement. It largerly depends on whether you go ViewFirst or ViewModelFirst.
   - Does **not** have a reference to the Model.
 - VIEWMODEL:
   - Has a reference to the Model
-  - May or mat not have a reference to the View.
+  - May or may not have a reference (no hard coded reference - but there will be an instance in it's context) to the View. It largerly depends on whether you go ViewFirst or ViewModelFirst.
 
 ### Implementation
 
