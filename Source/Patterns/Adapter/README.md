@@ -1,6 +1,6 @@
 # Adapter Pattern
 ## When to use?
-### As a wrapper
+The "friendly name" for an adapter is a "wrapper object", and thus:
 - Whenever you have a class, module, or API that would be useful but doesn't match (implement) the interface you require.
 - You are designing a class, module, framework or API and you want to ensure it is usable by a wide variety of classes and applications.
 
