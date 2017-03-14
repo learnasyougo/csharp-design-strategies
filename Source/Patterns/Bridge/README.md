@@ -17,6 +17,9 @@ You could now subclass each implementation of `IManuscript`, e.g.: `Book` > `Bac
 
 **We need a new level of abstraction**, so that when `Print()` is called it itself uses some kind of printer or formatter, while still keeping the different implementation details of the different `Print()` methods. We need to create an abstraction for the implementation of formatting.
 
+Thus we introducide the `IFormatter` interface that's used inside the `Print()` method. To make sure each and every `IManuscript` accepts an `IFormatter` we pass one in via the ctor, and thus need to make sure we make `IManuscript` into an asbtract class in stead of an interface. We do **change** the `Print()` signature to also accept a formatter, when it's null it'll use the default one, when it's not null it will use the one passed in. Still the `Print()` method keeps existing.
+
+
 
 
 ### So, use it when...

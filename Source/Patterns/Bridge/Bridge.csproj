@@ -45,6 +45,15 @@
     <Compile Include="01_Example_Printing_Before\Manuscripts\Faq.cs" />
     <Compile Include="01_Example_Printing_Before\Manuscripts\FaqQuestion.cs" />
     <Compile Include="01_Example_Printing_Before\Manuscripts\IManuscript.cs" />
+    <Compile Include="02_Example_Printing_After\ConsumingClient.cs" />
+    <Compile Include="02_Example_Printing_After\Manuscripts\Book.cs" />
+    <Compile Include="02_Example_Printing_After\Manuscripts\Faq.cs" />
+    <Compile Include="02_Example_Printing_After\Manuscripts\FaqQuestion.cs" />
+    <Compile Include="02_Example_Printing_After\Manuscripts\Formatters\DebugFormatter.cs" />
+    <Compile Include="02_Example_Printing_After\Manuscripts\Formatters\IFormatter.cs" />
+    <Compile Include="02_Example_Printing_After\Manuscripts\Formatters\ReverseFormatter.cs" />
+    <Compile Include="02_Example_Printing_After\Manuscripts\Formatters\StandardFormatter.cs" />
+    <Compile Include="02_Example_Printing_After\Manuscripts\Manuscript.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
