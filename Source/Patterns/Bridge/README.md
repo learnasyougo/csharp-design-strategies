@@ -19,13 +19,9 @@ You could now subclass each implementation of `IManuscript`, e.g.: `Book` > `Bac
 
 Thus we introducide the `IFormatter` interface that's used inside the `Print()` method. To make sure each and every `IManuscript` accepts an `IFormatter` we pass one in via the ctor, and thus need to make sure we make `IManuscript` into an asbtract class in stead of an interface. We do **change** the `Print()` signature to also accept a formatter, when it's null it'll use the default one, when it's not null it will use the one passed in. Still the `Print()` method keeps existing.
 
-
-
-
-### So, use it when...
-
-## Related patterns
-
+### Common uses (in real world)
+- Often used in UI API's, for example to define a `Shape` and it's drawing API.
+- Also in persistence, objects can be persisted, but how it's done can vary (db, file, network)... The abstraction of the ability to persist, and then the actual implementation of persistence.
 
 ## Resources & References
 - https://app.pluralsight.com/library/courses/csharp-design-strategies/table-of-contents
