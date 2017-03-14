@@ -3,6 +3,7 @@
 The "friendly name" for an adapter is a "wrapper object", and thus:
 - Whenever you have a class, module, or API that would be useful but doesn't match (implement) the interface you require.
 - You are designing a class, module, framework or API and you want to ensure it is usable by a wide variety of classes and applications.
+* Note, see related patterns below.
 
 ### Wait a minute - do you have an example?
 Ok, so imagine a standard power plug and the power outlets and the differences between US and Europe.. In between the plug and the outlet sits and "adapter" to let a US plug work with the european outlet.
@@ -15,6 +16,11 @@ The **intent** of the adapter is to convert the interface of a class into anothe
 
 ### Real world examples
 - ADO.NET's `IDataAdapter` with `DbDataAdapter` and it's related `OdbcDataAdapter`, `OleDbDataApeter`, `SqlClientDataAdapter` etc...
+
+## Related pattersn
+- Repository
+- Strategy, as the adapter pattern is often passed into a class that depends on it, thus implementing the strategy pattern
+- Façade, as they're both **wrappers**. The Façade however attempts to simplify the interface and often wraps **many** classes, while the adapter wraps a **single** adaptee and is not generally concerned with simplifying the interface.
 
 ## Resources & References
 - https://app.pluralsight.com/library/courses/csharp-design-strategies/table-of-contents
