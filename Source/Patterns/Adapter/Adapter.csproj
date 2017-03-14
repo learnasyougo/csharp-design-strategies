@@ -40,6 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="01_Example_Theory\Client.cs" />
+    <Compile Include="01_Example_Theory\Component.cs" />
+    <Compile Include="01_Example_Theory\ConcreteAdapter.cs" />
+    <Compile Include="01_Example_Theory\IAdapter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
