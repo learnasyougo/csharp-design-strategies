@@ -1,12 +1,25 @@
 # Bridge Pattern
-## When to use?
 
-### Wait a minute - do you have an example?
+## What and when to use?
+> Decouple an abstraction from it's implementation so the two can vary independently ~ GOF
 
-### So, use it when...
+- **Decouple abstract from implementation**: base class or interface has an implementation. In this case they're coupled together. Changes in the interface have to be made in the class, and changes in the class are going to affect the interface.
+- **so the two can vary indepdently**: as said above, the abstraction and the implementation are tightly coupled. The **reason** to use the bridge pattern is so the two can vary indepently from each other, and no changes are needed on both ends. 
+
+In essence we're going to abstract away the abstraction of the implementation. We throw in an extra level of abstraction.
 
 ### Real world examples
+FAQ, Book and a Paper that each have a set of very different properties, but each share a `Print()` method. Each one implements print differently.
+Each of them implements `IManuscript` which holds a `Print()` method signature. Ath this point there's **no need for a bridge pattern**.
 
+But several months later, now the client has an extra need.. He wants to print the books backwards (why, god knows why).
+You could now subclass each implementation of `IManuscript`, e.g.: `Book` > `BackwardsBook` and implement (override) the `Print()` method to print everything backwards... But that's cumbersome, **not the right way to do it!** Because you have to implement it for each and every implementation of `IManuscript`. And not only that, what if the client would want to print in different ways in the future.. Then the problem of sublassing even gets worse and grows each time. This is not maintainable.
+
+**We need a new level of abstraction**, so that when `Print()` is called it itself uses some kind of printer or formatter, while still keeping the different implementation details of the different `Print()` methods. We need to create an abstraction for the implementation of formatting.
+
+
+
+### So, use it when...
 
 ## Related patterns
 

@@ -40,6 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="01_Example_Printing_Before\ConsumingClient.cs" />
+    <Compile Include="01_Example_Printing_Before\Manuscripts\Book.cs" />
+    <Compile Include="01_Example_Printing_Before\Manuscripts\Faq.cs" />
+    <Compile Include="01_Example_Printing_Before\Manuscripts\FaqQuestion.cs" />
+    <Compile Include="01_Example_Printing_Before\Manuscripts\IManuscript.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
